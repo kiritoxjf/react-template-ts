@@ -1,7 +1,13 @@
 # React-Template-Ts
 
 ## 框架成分
-React + Redux + React-Redux + TypeScript
+React + Redux + React-Redux 7(Hooks) + React Router 6 + TypeScript
+
+## 各类官方文档地址
+[react官方文档](https://react.docschina.org/)
+[redux官方文档](https://www.redux.org.cn/)
+[react-redux官方文档](https://react-redux.js.org/)
+[react-router官方文档](https://reactrouter.com/)
 
 ## 创建流程
 
@@ -23,6 +29,7 @@ project
 |       |------ assets                  // 静态资源文件
 |       |------ controllers             // 容器组件
 |       |------ pages                   // 页面组件
+|       |------ routes                  // 路由文件夹
 |       |------ rudux                   // Redux文件夹
 |       |       |------ slices          // Slice文件夹
 |       |       |------ store.ts        // Redux入口
@@ -34,4 +41,9 @@ project
 |------ package.json
 |------ README.md
 |------ tsconfig.json
+```
+
+### 模块化路由 && 懒加载
+``` sh
+    npm install --save react-router-dom
 ```

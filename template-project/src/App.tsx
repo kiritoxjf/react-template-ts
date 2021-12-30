@@ -1,13 +1,16 @@
 import logo from './assets/logo.svg';
 import './App.css';
-import Demo from './pages/Demo/demo';
+import { Link, useRoutes } from 'react-router-dom';
+import routes from './routes';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Demo />
+        <Link to='/'>Home</Link>
+        <Link to='/demo'>Demo</Link>
+        {useRoutes(routes)}
       </header>
     </div>
   );
